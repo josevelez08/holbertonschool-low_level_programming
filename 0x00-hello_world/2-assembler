@@ -1,2 +1,2 @@
 #!/bin/bash
-as $CFILE > c.o
+as -o $CFILE > c.s
