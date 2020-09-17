@@ -1,6 +1,8 @@
 #include <stdio.h>
-/*
-	* main - imprime
+/**
+ * main - print message Programming is like building a multilingual puzzle
+ *
+ * Return: 0 always runs
  */
 int main(void)
 {
