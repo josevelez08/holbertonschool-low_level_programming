@@ -1,8 +1,11 @@
 #include "holberton.h"
+
 /**
- * dsdsa
- * 
+ * main - writes the character c to stdout
+ *
+ * Return: On success 1.
  */
+
 int main(void)
 {
 	int i = 0;
@@ -13,5 +16,6 @@ int main(void)
 	_putchar(c[i]);
 	i++;
 	}
+	_putchar(10);
 	return(0);
 }
