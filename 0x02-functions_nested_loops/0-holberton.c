@@ -11,11 +11,11 @@ int main(void)
 	int i = 0;
 	char c[9] = "Holberton";
 
-	while ( i < 10)
+	while (i < 9)
 	{
 	_putchar(c[i]);
 	i++;
 	}
 	_putchar(10);
-	return(0);
+	return (0);
 }
