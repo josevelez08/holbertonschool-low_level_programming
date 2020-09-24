@@ -1,0 +1,1 @@
+This the project of more funtions nested loops where I wiil severals functions with opoerators each like if, while, for, etc..
