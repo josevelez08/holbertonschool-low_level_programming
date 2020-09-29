@@ -1,0 +1,1 @@
+The first project of pointes, We will star with concepts each like dereferencing, post-increment and pre-increment
