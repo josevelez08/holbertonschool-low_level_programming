@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * _strdup - check the code for Holberton School students.
  * @str: one string
