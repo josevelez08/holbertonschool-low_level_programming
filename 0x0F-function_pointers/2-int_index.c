@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * is_98 - check if a number is equal to 98
+ * int_index - check if a number is equal to 98
  * @array: the integer to check
  * @size: tamaño del array
  * @cmp: funtion to pointer
@@ -21,11 +21,15 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	for (i = 0; i < size; i++)
 	{
-		j = cmp(array[i]) + j;
+		j = cmp(array[i]);
+		if (j != 0)
+		{
+			return (i);
+		}
 	}
 	if (j == 0)
 	{
 		return (-1);
 	}
-	return (j);
+	return (0);
 }
