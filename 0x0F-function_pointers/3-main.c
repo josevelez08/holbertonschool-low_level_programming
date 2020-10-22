@@ -32,7 +32,7 @@ num2 = atoi(argv[3]);
 		printf("Error\n");
 		exit(99);
 	}
-	printf("%d\n", result);
+	printf("%i\n", result);
 
 	return (0);
 }
