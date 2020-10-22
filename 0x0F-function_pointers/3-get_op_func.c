@@ -24,5 +24,10 @@ int (*get_op_func(char *s))(int, int) {
 		}
 		i++;
 	}
-		return (ops[5].f);
+	if (i == 5)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	return (0);
 }
