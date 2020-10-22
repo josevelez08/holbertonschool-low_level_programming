@@ -27,7 +27,7 @@ num2 = atoi(argv[3]);
 		printf("%d\n", result);
 		return (0);
 	}
-	if (result == NULL)
+	if (result == '\0')
 	{
 		printf("Error\n");
 		exit(99);
