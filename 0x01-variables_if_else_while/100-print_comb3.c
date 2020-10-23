@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - the advanced task
- *
+ * Return: 0 always
  */
 int main(void)
 {
