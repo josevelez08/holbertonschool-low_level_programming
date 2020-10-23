@@ -36,6 +36,7 @@ for (i = 0; i < 10; i++)
 		putchar(j + 48);
 		if (i == 8 && j == 9)
 		{
+		putchar(10);
 		return (0);
 		}
 		putchar(',');
