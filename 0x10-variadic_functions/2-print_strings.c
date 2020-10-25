@@ -19,6 +19,10 @@ for (i = 0; i < n; i++)
 	printf("%s", j);
 	if (i == 0)
 	{
+		if(separator == NULL)
+		{
+			break;
+		}
 		printf("%c ", *separator);
 	}
 }
