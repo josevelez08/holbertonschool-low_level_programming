@@ -16,6 +16,11 @@ va_start(valist, n);
 for (i = 0; i < n; i++)
 {
 	j = va_arg(valist, char *);
+	if (j == NULL)
+	{
+		printf("(nill)");
+		continue;
+	}
 	printf("%s", j);
 	if (i == 0)
 	{
