@@ -23,14 +23,16 @@ for (i = 0; i < n; i++)
 		continue;
 	}
 	printf("%s", j);
-	if (i == 0)
+	if (i == n - 1)
 	{
+			printf("\n");
+		return;
+	}
 		if (separator == NULL)
 		{
 			continue;
 		}
-		printf("%c ", *separator);
-	}
+	printf("%c ", *separator);
 }
 printf("\n");
 }
