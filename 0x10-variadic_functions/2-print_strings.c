@@ -42,5 +42,6 @@ for (i = 0; i < n; i++)
 	}
 	printf("%c ", *separator);
 }
+	va_end(valist);
 printf("\n");
 }
