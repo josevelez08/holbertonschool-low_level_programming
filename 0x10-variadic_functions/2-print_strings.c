@@ -19,6 +19,7 @@ for (i = 0; i < n; i++)
 	if (j == NULL)
 	{
 		printf("(nill)");
+		printf("%c ", *separator);
 		continue;
 	}
 	printf("%s", j);
