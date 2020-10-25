@@ -18,9 +18,17 @@ for (i = 0; i < n; i++)
 	j = va_arg(valist, char *);
 	if (j == NULL)
 	{
+		if (i == n - 1)
+	{
+		printf("(nill)\n");
+		return;
+	}
+	else
+	{
 		printf("(nill)");
 		printf("%c ", *separator);
 		continue;
+	}
 	}
 	printf("%s", j);
 	if (i == n - 1)
@@ -28,10 +36,10 @@ for (i = 0; i < n; i++)
 		printf("\n");
 		return;
 	}
-		if (separator == NULL)
-		{
-			continue;
-		}
+	if (separator == NULL)
+	{
+		continue;
+	}
 	printf("%c ", *separator);
 }
 printf("\n");
