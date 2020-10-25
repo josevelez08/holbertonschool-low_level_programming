@@ -25,7 +25,7 @@ for (i = 0; i < n; i++)
 	printf("%s", j);
 	if (i == n - 1)
 	{
-			printf("\n");
+		printf("\n");
 		return;
 	}
 		if (separator == NULL)
