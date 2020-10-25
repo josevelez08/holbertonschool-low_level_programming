@@ -20,6 +20,7 @@ for (i = 0; i < n; i++)
 	{
 		if (i == n - 1)
 	{
+		va_end(valist);
 		printf("(nill)\n");
 		return;
 	}
@@ -33,6 +34,7 @@ for (i = 0; i < n; i++)
 	printf("%s", j);
 	if (i == n - 1)
 	{
+		va_end(valist);
 		printf("\n");
 		return;
 	}
