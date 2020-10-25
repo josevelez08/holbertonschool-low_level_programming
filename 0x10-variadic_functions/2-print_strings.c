@@ -27,6 +27,7 @@ for (i = 0; i < n; i++)
 	{
 		if (separator == NULL)
 		{
+			printf(" ");
 			continue;
 		}
 		printf("%c ", *separator);
