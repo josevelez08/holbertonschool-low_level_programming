@@ -19,9 +19,9 @@ for (i = 0; i < n; i++)
 	printf("%s", j);
 	if (i == 0)
 	{
-		if(separator == NULL)
+		if (separator == NULL)
 		{
-			break;
+			continue;
 		}
 		printf("%c ", *separator);
 	}
