@@ -5,12 +5,9 @@
 */
 void print_all(const char * const format, ...)
 {
-	unsigned int j;
+	unsigned int j = 0;
 	va_list ap;
-	int i;
 	char *s;
-	double f;
-	char c;
 
 	va_start(ap, format);
 
@@ -20,24 +17,25 @@ void print_all(const char * const format, ...)
 		{
 		case 's':
 		s = va_arg(ap, char *);
+		if (!s)
+		{
+			s = "(nill)";
+		}
 		printf("%s", s);
 		break;
 		case 'i':
-		i = va_arg(ap, int);
-		printf("%d", i);
+		printf("%d", va_arg(ap, int));
 		break;
 		case 'f':
-		f = va_arg(ap, double);
-		printf("%f", f);
+		printf("%f", va_arg(ap, double));
 		break;
 		case 'c':
-		c = va_arg(ap, int);
-		printf("%c", c);
+		printf("%c", va_arg(ap, int));
 		break;
 		default:
 		continue;
 		}
-		if (format[i])
+		if (format[j])
 		{
 			printf(", ");
 		}
