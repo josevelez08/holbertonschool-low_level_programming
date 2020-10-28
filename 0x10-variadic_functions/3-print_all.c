@@ -10,8 +10,6 @@ void print_all(const char * const format, ...)
 	char *s;
 
 	va_start(ap, format);
-	if (format == '\0')
-	{ return; }
 
 	while (format[j] != '\0')
 	{
