@@ -9,6 +9,8 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	char *s;
 
+	if (format == NULL)
+	{ return (NULL); }
 	va_start(ap, format);
 
 	while (format[j] != '\0')
@@ -19,7 +21,7 @@ void print_all(const char * const format, ...)
 		s = va_arg(ap, char *);
 		if (!s)
 		{
-			s = "(nill)";
+			s = "(nil)";
 		}
 		printf("%s", s);
 		break;
