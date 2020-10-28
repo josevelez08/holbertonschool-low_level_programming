@@ -9,9 +9,9 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	char *s;
 
-	if (format == NULL)
-	{ return; }
 	va_start(ap, format);
+	if (format == '\0')
+	{ return; }
 
 	while (format[j] != '\0')
 	{
