@@ -5,10 +5,6 @@
  */
 void free_listint(listint_t *head)
 {
-	if (head == NULL)
-	{
-		return (NULL);
-	}
 	listint_t *iterator = NULL;
 		while (head->next != NULL)
 		{
