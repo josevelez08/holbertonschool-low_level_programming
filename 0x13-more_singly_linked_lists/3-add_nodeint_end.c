@@ -11,6 +11,10 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	listint_t *iterator = NULL;
 
 	newElement = ((listint_t *)malloc(sizeof(listint_t)));
+	if (newElement == NULL)
+	{
+		return (NULL);
+	}
 
 	newElement->n = n;
 	newElement->next = NULL;
