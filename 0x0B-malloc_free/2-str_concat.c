@@ -1,44 +1,61 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
+
 /**
- * str_concat - check the code for Holberton School students.
- * @s1: one string
- * @s2: second string
+ * _strlen - returns the length of a string.
+ * @str: Pointer
+ *
  * Return: Always 0.
+ */
+int _strlen(char *str)
+{
+	int i, lengh;
+
+	for (i = 0; str[i] != 0; i++)
+	{
+		lengh++;
+	}
+
+	return (lengh);
+}
+
+/**
+ * str_concat - concatenates two strings.
+ * @s1: first string
+ * @s2: second string
+ * Return: two strins or Null
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i;
-	int j;
-	int k;
-	char *y;
+	char *s;
+	int i, j, k;
 
-	for (i = 0; s1[i] != '\0';)
+	if (s1 == NULL)
 	{
-		i++;
+		s1 = "";
 	}
-	for (j = 0; s2[j] != '\0';)
+	if (s2 == NULL)
 	{
-		j++;
+		s2 = "";
 	}
 
-	k = i + j;
+	s = (char *)malloc(sizeof(char) * (_strlen(s1) + _strlen(s2) + 1));
 
-	y = malloc((sizeof(char) * k) + 1);
-	if (y == NULL)
+	if (s == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
-	for (i = 0; s1[i] != '\0'; i++)
+	k = 0;
+	for (i = 0; s1[i] != '\0'; i++, k++)
 	{
-		y[i] = s1[i];
+		s[k] = s1[i];
 	}
-		for (j = 0; s2[j] != '\0'; j++)
+
+	for (j = 0; s2[j] != '\0'; j++, k++)
 	{
-		y[i] = s2[j];
-		i++;
+		s[k] = s2[j];
 	}
-	y[i] = '\0';
-	return (y);
+
+	s[k] = '\0';
+	return (s);
 }
