@@ -1,20 +1,25 @@
 #include "holberton.h"
-/**
- * _strspn - check the code for Holberton School students.
- * @s: string
- * @accept: string
- * Return: Always 0.
-*/
 
+/**
+ * _strpbrk - Searches a string for any of a ser of bytes
+ * @s: Destination memory
+ * @accept: Memory for source
+ * Return: Destination memory
+ **/
 char *_strpbrk(char *s, char *accept)
 {
+	int i;
+
 	while (*s != '\0')
 	{
-		s++;
-		if (*s == *accept)
+		for (i = 0; accept[i] != '\0'; i++)
 		{
-			return (s);
+			if (*s == accept[i])
+			{
+				return (s);
+			}
 		}
+		s++;
 	}
 	return (0);
 }
