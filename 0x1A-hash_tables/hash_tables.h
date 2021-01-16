@@ -29,4 +29,8 @@ typedef struct hash_table_s
 	hash_node_t **array;
 } hash_table_t;
 hash_table_t *hash_table_create(unsigned long int size);
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "hash_tables.h"
 #endif
